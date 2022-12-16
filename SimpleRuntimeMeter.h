@@ -1,11 +1,15 @@
-#ifndef SIMPLERUNTIMEMETER_H
-#define SIMPLERUNTIMEMETER_H
+#include <chrono>
+#include <iostream>
 
 
 class SimpleRuntimeMeter
 {
 public:
-    SimpleRuntimeMeter();
-};
+    SimpleRuntimeMeter(const std::string &id);
+    ~SimpleRuntimeMeter();
 
-#endif // SIMPLERUNTIMEMETER_H
+protected:
+private:
+    const std::string m_id;
+    const std::chrono::steady_clock::time_point m_startTime;
+};
