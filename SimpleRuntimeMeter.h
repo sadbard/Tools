@@ -1,7 +1,6 @@
 #include <chrono>
 #include <iostream>
 
-
 class SimpleRuntimeMeter
 {
 public:
